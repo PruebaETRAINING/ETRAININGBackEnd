@@ -94,7 +94,7 @@ class CursoController extends Controller
      */
     public function destroy(Request $request)
     {
-        $cursos = Articulo::destroy($request->id);
+        $cursos = Cursos::destroy($request->id);
         return $cursos;
     }
 }
